@@ -1,0 +1,9 @@
+[Unit]
+Description=A systemd service for the mlat-client.
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /home/jetvision/mlat-client/start_mlat-client.sh
+
+[Install]
+WantedBy=multi-user.target
