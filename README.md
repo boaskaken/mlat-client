@@ -5,7 +5,7 @@ server that resolves the transmitter position by multilateration of the same
 message received by multiple clients.
 
 The corresponding server code is available at
-https://github.com/mutability/mlat-server.
+https://github.com/boaskaken/mlat-client.
 
 There is also support for running in a mode used to feed multilateration
 information to FlightAware via piaware. In this mode, the client is started
