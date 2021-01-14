@@ -365,8 +365,8 @@ class Coordinator:
             return
 
         # Candidate for MLAT
-        if now - ac.last_position_time < self.position_expiry_age:
-            return   # reported position recently, no need for mlat
+        #if now - ac.last_position_time < self.position_expiry_age:
+        #    return   # reported position recently, no need for mlat
         self.server.send_mlat(message)
 
     def received_df11(self, message, now):
@@ -389,8 +389,8 @@ class Coordinator:
             return
 
         # Candidate for MLAT
-        if now - ac.last_position_time < self.position_expiry_age:
-            return   # reported position recently, no need for mlat
+        #if now - ac.last_position_time < self.position_expiry_age:
+        #    return   # reported position recently, no need for mlat
         self.server.send_mlat(message)
 
     def received_df17(self, message, now):
